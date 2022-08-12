@@ -1,0 +1,23 @@
+.tabs {
+  display: grid;
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__btn {
+    &.is-active {
+      border: 1px solid coral;
+      color: #FFF;
+      background-color: coral;
+    }
+  }
+
+  &__tab {
+    &:not(.is-active) {
+      display: none;
+    }
+  }
+}

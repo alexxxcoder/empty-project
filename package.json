@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "serve": "http-server",
+    "css": "sass scss/style.scss:css/style.css --watch"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1",
+    "sass": "^1.54.4"
+  }
+}
