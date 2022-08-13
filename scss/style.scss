@@ -1,23 +1,17 @@
-.tabs {
-  display: grid;
+%button {
+  width: 40px;
+  height: 40px;
+}
 
-  &__nav {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.calculator {
+  &__button {
+    @extend %button;
   }
+}
 
-  &__btn {
-    &.is-active {
-      border: 1px solid coral;
-      color: #FFF;
-      background-color: coral;
-    }
-  }
+[data-action] {
+  &:before, &:after {
+    content: '';
 
-  &__tab {
-    &:not(.is-active) {
-      display: none;
-    }
   }
 }

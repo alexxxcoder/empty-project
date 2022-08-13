@@ -1,18 +1,10 @@
-.tabs {
-  display: grid;
+.calculator__button {
+  width: 40px;
+  height: 40px;
 }
-.tabs__nav {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.tabs__btn.is-active {
-  border: 1px solid coral;
-  color: #FFF;
-  background-color: coral;
-}
-.tabs__tab:not(.is-active) {
-  display: none;
+
+[data-action]:before, [data-action]:after {
+  content: "";
 }
 
 /*# sourceMappingURL=style.css.map */
