@@ -1,11 +1,64 @@
 %button {
   width: 40px;
   height: 40px;
+  border-radius: 8px;
 }
 
 .calculator {
+  padding: 20px;
+  display: grid;
+  margin: 20px auto 0 auto;
+  border-radius: 8px;
+  border: 1px solid blue;
+  max-width: 280px;
+  grid-gap: 20px;
+
+  &__screen {
+    min-height: 40px;
+    border-radius: 8px;
+    border: 1px solid blue;
+    display: flex;
+    padding: 0 8px;
+    align-items: center;
+  }
+
+  &__buttons {
+    display: grid;
+    grid-template-columns: 1fr min-content;
+    grid-gap: 8px;
+  }
+
+  &__operations {
+    display: grid;
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  &__operands {
+    display: grid;
+    grid-column: 1;
+    grid-row: 1;
+    grid-template-columns: repeat(3, auto);
+  }
+
   &__button {
     @extend %button;
+    border: 1px solid blue;
+    transform: scale(1);
+    transition: transform .2s ease-in-out;
+
+    &.is-active {
+      transform: scale(.9);
+    }
+
+    &[data-value] {
+
+    }
+
+    &[data-action] {
+      grid-column: 4;
+      order: 2;
+    }
   }
 }
 

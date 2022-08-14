@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "serve": "http-server",
+    "serve": "http-server -w -o",
     "css": "sass scss/style.scss:css/style.css --watch"
   },
   "devDependencies": {
