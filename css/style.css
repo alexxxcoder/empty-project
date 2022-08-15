@@ -12,6 +12,7 @@
   border: 1px solid blue;
   max-width: 280px;
   grid-gap: 20px;
+  background: rgb(161, 212, 195);
 }
 .calculator__screen {
   min-height: 40px;
@@ -20,6 +21,7 @@
   display: flex;
   padding: 0 8px;
   align-items: center;
+  background-color: rgba(57, 225, 222, 0.668);
 }
 .calculator__buttons {
   display: grid;
@@ -44,10 +46,16 @@
 }
 .calculator__button.is-active {
   transform: scale(0.9);
+  background: rgba(145, 239, 4, 0.757);
+}
+.calculator__button[data-value] {
+  background-color: rgba(77, 73, 73, 0.611);
+  color: aliceblue;
 }
 .calculator__button[data-action] {
   grid-column: 4;
   order: 2;
+  background: rgba(246, 140, 47, 0.669);
 }
 
 [data-action]:before, [data-action]:after {

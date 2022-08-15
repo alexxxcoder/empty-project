@@ -70,7 +70,7 @@ class Calculator {
   }
 
   _result() {
-    console.log('result')
+    
   }
 
   _onClick(e) {
